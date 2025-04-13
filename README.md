@@ -105,3 +105,6 @@ Copy
 - **Diff-block syntax** for status tracking  
 - **Course-focused structure**  
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Made with ❤️ and too much coffee by Reda Ouzidane
+https://paypal.me/OUZIDANE?country.x=MA&locale.x=en_US
