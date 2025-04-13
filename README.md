@@ -1,60 +1,56 @@
 <p align="center">
-  <img src="https://media.giphy.com/media/3o7aCVpH7k5zdykl6c/giphy.gif" alt="Malware Dev Banner" width="80%" />
+  <img src="https://media.giphy.com/media/3o7aCVpH7k5zdykl6c/giphy.gif" width="80%" alt="Banner">
 </p>
 
 <h1 align="center">💀 MALWAR-DEV 💀</h1>
+<p align="center"><strong>Learn. Evade. Survive.</strong></p>
+
 <p align="center">
-  <i>Advanced Malware Development & Evasion Research Lab</i>  
-  <br><br>
-  <img src="https://img.shields.io/badge/EDR-Bypass-blueviolet?style=flat-square&logo=windows" />
-  <img src="https://img.shields.io/badge/Windows%20Internals-Deep%20Dive-red?style=flat-square&logo=microsoft" />
-  <img src="https://img.shields.io/badge/API%20Hooking-Advanced-yellow?style=flat-square" />
-  <img src="https://img.shields.io/badge/POC-Ready-green?style=flat-square&logo=github" />
+  <img src="https://img.shields.io/badge/RedTeam-Approved-red?style=flat-square" />
+  <img src="https://img.shields.io/badge/MalwareDev-Advanced-black?style=flat-square" />
+  <img src="https://img.shields.io/badge/EDR-Bypass-blueviolet?style=flat-square" />
 </p>
 
 ---
 
-## 🧠 About This Repo
+## 🧠 Welcome
 
-Welcome to **MALWAR-DEV** — a place for **serious malware devs, red teamers**, and **offensive security researchers**.  
-This is **not** script kiddie land. Here, we explore **advanced malware techniques**, **anti-debugging**, **API hooking**, **stealth**, and **bypassing EDR/AV**.
+Welcome to **MALWAR-DEV** — a place for **serious malware devs**, **red teamers**, and **offensive security researchers**.
 
----
+> ⚠️ This is not script kiddie land.
 
-<details>
-  <summary>🧩 <strong>Techniques Covered</strong></summary>
-
-- ✅ Native API Evasion (`Zw`, `Nt`)
-- ✅ API Hooking & Unhooking
-- ✅ Shellcode Injection (Classic + Remote)
-- ✅ DLL Injection Techniques
-- ✅ Inline Hook Bypass
-- ✅ Syscall Spoofing & Direct Syscalls
-- ✅ Debugger Detection & Anti-Anti-Debug
-- ✅ Self-Deletion & Persistence
-- ✅ Evasion via TEB/PEB manipulation
-- ✅ MSR Register Tricks (`IA32_LSTAR`, `RDMSR`)
-</details>
+Here, we explore 🔍:
+- Advanced **malware techniques**
+- **Anti-debugging**
+- **API hooking & unhooking**
+- **Stealth & evasion**
+- **EDR/AV bypassing**
+- Native Windows internals
 
 ---
 
-// Example: Manual syscall with inline assembly
+## 🧩 Techniques Covered
+
+- Direct Syscalls (Win64)
+- Shellcode Injection (local & remote)
+- DLL Injection (Manual Mapping / Reflective)
+- Hook Bypass (IAT, EAT, Inline)
+- Native API (Zw/Nt) Obfuscation
+- TEB/PEB Tampering
+- Syscall Spoofing
+- MSR Trickery (`IA32_LSTAR`, `RDMSR`)
+- Self-deletion and stealth
+- Anti-debugging and patch detection
+
+---
+
+## ⚙️ Example Snippet
+
+```cpp
+// Manual syscall with inline assembly
 __asm {
-    mov eax, 0x50 // Syscall ID
-    lea edx, [esp+4]
-    int 0x2e      // Trigger syscall
+    mov eax, 0x50        // Syscall ID
+    lea edx, [esp+4]     // Pointer to arguments
+    int 0x2e             // Trigger syscall (legacy method)
 }
-
-<p align="center"> <img src="https://media.giphy.com/media/26ufnwz3wDUli7GU0/giphy.gif" width="500px" /> <br><br> <i>POC of Shellcode Injection & API Unhooking</i> </p>
-💀 MALWAR-DEV
-"Learn. Evade. Survive."
-import os
-
-pdfs = [f for f in os.listdir() if f.endswith('.pdf')]
-with open("README_INDEX.md", "w") as f:
-    f.write("# 📄 PDF Index\n\n")
-    for pdf in sorted(pdfs):
-        f.write(f"- [{pdf}](./{pdf})\n")
-REDAOUZIDANE
-⚔️ MALWAR-DEV ⚔️
 
