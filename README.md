@@ -1,66 +1,48 @@
-# 🔥 Malware Dev & EDR Bypass Research Hub  
-*A treasure trove of cutting-edge security research, evasion techniques, and Windows internals.*  
-# 　
-　　　　　
-　　██████╗░███████╗██████╗░░█████╗░██╗░░██╗  ██████╗░██╗░░░██╗██████╗░███████╗░██████╗
-　　██╔══██╗██╔════╝██╔══██╗██╔══██╗██║░██╔╝  ██╔══██╗╚██╗░██╔╝██╔══██╗██╔════╝██╔════╝
-　　██║░░██║█████╗░░██████╔╝███████║█████═╝░  ██████╔╝░╚████╔╝░██████╔╝█████╗░░╚█████╗░
-　　██║░░██║██╔══╝░░██╔═══╝░██╔══██║██╔═██╗░  ██╔═══╝░░░╚██╔╝░░██╔═══╝░██╔══╝░░░╚═══██╗
-　　██████╔╝███████╗██║░░░░░██║░░██║██║░╚██╗  ██║░░░░░░░░██║░░░██║░░░░░███████╗██████╔╝
-　　╚═════╝░╚══════╝╚═╝░░░░░╚═╝░░╚═╝╚═╝░░╚═╝  ╚═╝░░░░░░░░╚═╝░░░╚═╝░░░░░╚══════╝╚═════╝░
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　𝗯𝘆 [REDA OUZIDANE]
+# 🔥 𝓜𝓪𝓵𝔀𝓪𝓻𝓮 𝓓𝓮𝓿 & 𝓔𝓓𝓡 𝓑𝔂𝓹𝓪𝓼𝓼 𝓛𝓪𝓫  
+### *𝓐 𝓬𝓸𝓶𝓹𝓲𝓵𝓪𝓽𝓲𝓸𝓷 𝓸𝓯 𝓪𝓭𝓿𝓪𝓷𝓬𝓮𝓭 𝓼𝓸𝓾𝓻𝓼𝓮 𝓶𝓪𝓽𝓮𝓻𝓲𝓪𝓵𝓼 𝓯𝓸𝓻 𝓮𝓽𝓱𝓲𝓬𝓪𝓵 𝓱𝓪𝓬𝓴𝓲𝓷𝓰*  
 
-
-
-> **⚠ 𝗪𝗔𝗥𝗡𝗜𝗡𝗚**  
-> `This repository contains dangerous knowledge.`  
-> `Handle with extreme caution. 0xDEADBEEF`
-
-## 🔮 𝗧𝗔𝗕𝗟𝗘 𝗢𝗙 𝗖𝗛𝗔𝗢𝗦
-```diff
-+ [📜 Research Papers](#-blood-soaked-papers)
-+ [💉 Injection Arsenal](#-injection-arsenal)
-+ [👻 Stealth Tech](#-ghost-tech)
-+ [⚔ Win32 Black Magic](#-win32-black-magic)
-+ [☠ Legal](#-legal-nukes)
-
-![Hacker](https://img.shields.io/badge/Level-Advanced-red) 
-![EDR Bypass](https://img.shields.io/badge/EDR-Bypass-blue) 
-![Windows Kernel](https://img.shields.io/badge/Windows-Kernel-green)  
-![License](https://img.shields.io/badge/License-Research_Only-important)
+![GitHub Stars](https://img.shields.io/badge/⭐-5/5-yellow) 
+![Level](https://img.shields.io/badge/𝓛𝓮𝓿𝓮𝓵-𝓐𝓭𝓿𝓪𝓷𝓬𝓮𝓭-red) 
+![License](https://img.shields.io/badge/𝓛𝓲𝓬𝓮𝓷𝓼𝓮-𝓔𝓭𝓾𝓬𝓪𝓽𝓲𝓸𝓷𝓪𝓵-blue)
 
 ---
 
-## 🚀 **Featured Research & Techniques**  
+## 📜 **𝓒𝓸𝓾𝓻𝓼𝓮 𝓜𝓪𝓽𝓮𝓻𝓲𝓪𝓵𝓼**  
+*(Organized by topic for easy study)*  
 
-### **📜 Latest Publications**  
-| Title | Category | Badges |  
+### 𝓒𝓸𝓻𝓮 𝓣𝓮𝓬𝓱𝓷𝓲𝓺𝓾𝓮𝓼  
+| Topic | Resource | Badges |  
 |-------|----------|--------|  
-| [**API Hooking for EDR Bypass**](API_Hooking_Techniques_for_EDR_Bypass.pdf) | Evasion | `EDR` `Hook` `WinAPI` |  
-| [**Anti-NativeAPI Evasion**](Anti_NativeAPI.pdf) | Anti-Detection | `Kernel` `Syscalls` |  
-| [**KiSystemCall64 Deep Dive**](KiSystemCall64_in_Windows_Kernel.pdf) | Kernel Exploit | `x64` `MSR` |  
-| [**Self-Deleting Malware**](TP_malwar_self_deltion.pdf) | Stealth | `Persistence` `Evasion` |  
+| **API Hooking** | [API_Hooking_Techniques.pdf](API_Hooking_Techniques_for_EDR_Bypass.pdf) | `EDR` `WinAPI` |  
+| **Process Injection** | [Injection.pdf](Injection.pdf) | `Shellcode` `DLL` |  
+| **Anti-Debugging** | [Anti_Debugger.pdf](TP_project_Anti_Dubuger.pdf) | `Timing Attacks` `NtQuery` |  
 
-### **💉 Injection Techniques**  
-- [Shellcode Injection](Shell_code_injection.pdf) `Direct Syscalls` `NTAPI`  
-- [DLL Injection (Classic/Modern)](dll_injection.pdf) `Process Hollowing` `APC`  
-- [Debugging & Patching](Debuging___Patched.pdf) `Anti-Analysis`  
+### 𝓐𝓭𝓿𝓪𝓷𝓬𝓮𝓭 𝓒𝓸𝓷𝓬𝓮𝓹𝓽𝓼  
+```diff
 
-### **🛡️ Windows Internals**  
-- [TEB/PEB Manipulation](TEB_PEB.pdf) `Memory Forensics`  
-- [IA32_LSTAR & RDMSR](Understanding_IA32_LSTAR_and_RDMSR.pdf) `Kernel Roots`  
-- [Win32k/NtDll Secrets](WINKERNEL32.pdf) `Undocumented APIs`  
++ [✓] Kernel Exploitation (KiSystemCall64.pdf)
++ [✓] Stealth Techniques (Self_Deletion.pdf)
+! [~] Memory Forensics (TEB_PEB.pdf)
+# Clone the repo (requires Git 2.0+)
+git clone https://github.com/yourusername/malware-dev-course.git
+cd malware-dev-course
+; Ethical Pledge:
+MOV R0, #0xETHICS    ; Always act ethically
+BL  check_privileges ; Verify proper authorization
+1. Fork -> 2. Commit -> 3. PR
 
----
+### 🔥 **Key Features:**  
+- **Elegant script fonts** for headings  
+- **Progress checklist** for learning outcomes  
+- **ARM assembly pledge** for ethics  
+- **Badge-enhanced** topics  
+- **Diff-block syntax** for status tracking  
+- **Course-focused structure**  
 
-![Hacker Mindset](https://via.placeholder.com/800x200.png/000000/FFFFFF?text=Knowledge+is+Power+-+Use+It+Wisely)
+This version:  
+✅ Looks professional for academic use  
+✅ Keeps the "cool hacker" aesthetic  
+✅ Clearly emphasizes ethical use  
+✅ Organizes content for structured learning  
 
-### 🔥 Key Features:
-- **Badge-enhanced** categorization
-- **Table-formatted** research papers
-- **Terminal-style** code blocks
-- **Legal disclaimer** for compliance
-- **Contributing guidelines**
-- **Hacker-themed** ASCII art
-
-Just copy-paste this into your `README.md` and it'll render beautifully on GitHub! Would you like any modifications to the design?
+Want me to add a course syllabus section or learning milestones?
