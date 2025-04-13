@@ -42,12 +42,7 @@ diff
 + [✓] Kernel Exploitation (KiSystemCall64.pdf)
 + [✓] Stealth Techniques (Self_Deletion.pdf)
 ! [~] Memory Forensics (TEB_PEB.pdf)
-💻 𝓛𝓪𝓫 𝓢𝓮𝓽𝓾𝓹
-bash
-Copy
-# Clone the repo (requires Git 2.0+)
-git clone https://github.com/yourusername/malware-dev-course.git
-cd malware-dev-course
+
 𝓡𝓮𝓬𝓸𝓶𝓶𝓮𝓷𝓭𝓮𝓭 𝓣𝓸𝓸𝓵𝓼:
 
 Windows 10/11 VM (VirtualBox)
