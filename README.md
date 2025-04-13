@@ -1,87 +1,60 @@
-# MALWAR-DEV 🔬💻  
-**Advanced Malware Development & Injection Toolkit for Red Teamers and Security Researchers**
+<p align="center">
+  <img src="https://media.giphy.com/media/3o7aCVpH7k5zdykl6c/giphy.gif" alt="Malware Dev Banner" width="80%" />
+</p>
 
-![MALWAR-DEV](https://img.shields.io/badge/Status-Under_Development-orange) ![License](https://img.shields.io/badge/License-Educational_Use_Only-red)
-
----
-
-## 🚀 About the Project
-
-**MALWAR-DEV** is a custom toolkit designed for those interested in exploring advanced malware development techniques. This project is built for **Red Team professionals, CTF players, cybersecurity students**, and researchers who want to better understand how modern malware behaves at a low level.
-
-> **⚠️ FOR EDUCATIONAL PURPOSES ONLY**
-
----
-
-## 🎯 Features
-
-- ✅ Custom shellcode execution  
-- ✅ Process Injection Techniques  
-- ✅ PE file manipulation  
-- ✅ Dynamic API resolution  
-- 🔄 Evasion techniques (coming soon)  
-- 🧪 Modular format for experimentation and testing
+<h1 align="center">💀 MALWAR-DEV 💀</h1>
+<p align="center">
+  <i>Advanced Malware Development & Evasion Research Lab</i>  
+  <br><br>
+  <img src="https://img.shields.io/badge/EDR-Bypass-blueviolet?style=flat-square&logo=windows" />
+  <img src="https://img.shields.io/badge/Windows%20Internals-Deep%20Dive-red?style=flat-square&logo=microsoft" />
+  <img src="https://img.shields.io/badge/API%20Hooking-Advanced-yellow?style=flat-square" />
+  <img src="https://img.shields.io/badge/POC-Ready-green?style=flat-square&logo=github" />
+</p>
 
 ---
 
-## 📚 Recommended Learning Path (Before Using MALWAR-DEV)
+## 🧠 About This Repo
 
-To get the most out of this toolkit, it's recommended to have a solid foundation in the following areas:
-
-### 📌 Languages & Concepts:
-- `C/C++`: Understanding pointers, memory management, and Windows APIs  
-- `Assembly (x86/x64)`: To build, debug, and understand shellcode  
-- `.NET Framework`: Useful for loader development and post-exploitation techniques  
-- `Windows Internals`: Threading, memory layout, PE file structure  
-
-### 🧠 Suggested Topics to Master:
-- Process Hollowing & Injection  
-- DLL Injection & Reflective DLLs  
-- Shellcode Encoding & Decoding  
-- API Hooking & Unhooking  
-- Evasion techniques (e.g., AMSI Bypass, ETW Patching)
+Welcome to **MALWAR-DEV** — a place for **serious malware devs, red teamers**, and **offensive security researchers**.  
+This is **not** script kiddie land. Here, we explore **advanced malware techniques**, **anti-debugging**, **API hooking**, **stealth**, and **bypassing EDR/AV**.
 
 ---
 
-## ⚙️ Requirements
+<details>
+  <summary>🧩 <strong>Techniques Covered</strong></summary>
 
-- Windows 10 or above (VM recommended)  
-- Visual Studio / mingw / x64dbg  
-- Python (optional for automation)  
-- Admin privileges for testing in lab environments
-
----
-
-## 🛡️ Disclaimer
-
-This project is provided **strictly for educational and authorized security testing purposes**.  
-**⚠️ Any unauthorized use of this code is strictly prohibited.**  
-The author is not responsible for any damages or legal consequences caused by the misuse of this toolkit.
-
-Please use it **responsibly and ethically**, within isolated lab environments or with **explicit permission**.
+- ✅ Native API Evasion (`Zw`, `Nt`)
+- ✅ API Hooking & Unhooking
+- ✅ Shellcode Injection (Classic + Remote)
+- ✅ DLL Injection Techniques
+- ✅ Inline Hook Bypass
+- ✅ Syscall Spoofing & Direct Syscalls
+- ✅ Debugger Detection & Anti-Anti-Debug
+- ✅ Self-Deletion & Persistence
+- ✅ Evasion via TEB/PEB manipulation
+- ✅ MSR Register Tricks (`IA32_LSTAR`, `RDMSR`)
+</details>
 
 ---
 
-## 🤝 Contributing
+// Example: Manual syscall with inline assembly
+__asm {
+    mov eax, 0x50 // Syscall ID
+    lea edx, [esp+4]
+    int 0x2e      // Trigger syscall
+}
 
-Pull requests are welcome! Feel free to open issues or suggest new modules. Let’s collaborate to build smarter tools for safer systems.
+<p align="center"> <img src="https://media.giphy.com/media/26ufnwz3wDUli7GU0/giphy.gif" width="500px" /> <br><br> <i>POC of Shellcode Injection & API Unhooking</i> </p>
+💀 MALWAR-DEV
+"Learn. Evade. Survive."
+import os
 
----
+pdfs = [f for f in os.listdir() if f.endswith('.pdf')]
+with open("README_INDEX.md", "w") as f:
+    f.write("# 📄 PDF Index\n\n")
+    for pdf in sorted(pdfs):
+        f.write(f"- [{pdf}](./{pdf})\n")
+REDAOUZIDANE
+⚔️ MALWAR-DEV ⚔️
 
-## 📬 Contact
-
-For feedback, questions, or collaborations:  
-**[REDAOUZIDANE](https://github.com/REDAOUZIDANE)**
-
----
-
-## 🔗 Related Topics
-
-- [x64dbg](https://x64dbg.com/)  
-- [Windows Internals by Mark Russinovich](https://learn.microsoft.com/en-us/sysinternals/)  
-- [Offensive Security Exploitation Labs](https://www.offensive-security.com/)  
-- [Maldev Academy](https://maldevacademy.com/)
-
----
-
-**Happy hacking—stay ethical.**
