@@ -18,15 +18,14 @@
 | **Anti-Debugging** | [Anti_Debugger.pdf](TP_project_Anti_Dubuger.pdf) | `Timing Attacks` `NtQuery` |  
 
 ### 𝓐𝓭𝓿𝓪𝓷𝓬𝓮𝓭 𝓒𝓸𝓷𝓬𝓮𝓹𝓽𝓼  
-```diff
+diff
 
 + [✓] Kernel Exploitation (KiSystemCall64.pdf)
 + [✓] Stealth Techniques (Self_Deletion.pdf)
 ! [~] Memory Forensics (TEB_PEB.pdf)
 # Clone the repo (requires Git 2.0+)
-git clone https://github.com/yourusername/malware-dev-course.git
-cd malware-dev-course
-; Ethical Pledge:
++
+
 MOV R0, #0xETHICS    ; Always act ethically
 BL  check_privileges ; Verify proper authorization
 1. Fork -> 2. Commit -> 3. PR
